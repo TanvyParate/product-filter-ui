@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Filters</h2>
+
+        <div class="filter-section">
+          <label for="search">Search</label>
+          <input type="text" id="search" placeholder="Search products..." />
+        </div>
+
+        <div class="filter-section">
+          <h3>Category</h3>
+
+          <div>
+            <input
+              type="checkbox"
+              id="electronics"
+              value="Electronics"
+              class="category"
+            />
+            <label for="electronics">Electronics</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="fashion"
+              value="Fashion"
+              class="category"
+            />
+            <label for="fashion">Fashion</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="furniture"
+              value="Furniture"
+              class="category"
+            />
+            <label for="furniture">Furniture</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="books" value="Books" class="category" />
+            <label for="books">Books</label>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Price</h3>
+          <div>
+            <input
+              type="radio"
+              name="price"
+              value="0-50"
+              id="p1"
+              class="price"
+            />
+            <label for="p1">Under $50</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="price"
+              value="50-100"
+              id="p2"
+              class="price"
+            />
+            <label for="p2">$50 - $100</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="price"
+              value="100-500"
+              id="p3"
+              class="price"
+            />
+            <label for="p3">$100 - $500</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="price"
+              value="all"
+              id="p4"
+              class="price"
+              checked
+            />
+            <label for="p4">All Prices</label>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Sort By</h3>
+          <select id="sort">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating-desc">Rating: High to Low</option>
+          </select>
+        </div>
+
+        <button id="reset">Reset Filters</button>
+      </aside>
+
+      <main class="products-section">
+        <h1>Products</h1>
+        <div id="products" class="product-grid">
+          <!-- Products will be injected here by JS -->
+        </div>
+        <p id="no-results" class="hidden">No products match your filters.</p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
