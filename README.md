@@ -14,8 +14,3 @@ A responsive and interactive Product Filter UI built using **HTML, CSS, and Java
 - Clean and responsive grid layout
 - Smooth UI transitions and hover effects
 - Mobile-friendly design
-
----
-
-## 📬 Connect with Me  
-🧠 [@TanvyCodeStudio](https://www.youtube.com/@TCodeStudiobyTanvy) – YouTube
